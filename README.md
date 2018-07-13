@@ -10,5 +10,5 @@ git clone https://github.com/fatih/vim-go.git
 git clone https://github.com/Shougo/neocomplete.vim.git
 git clone https://github.com/majutsushi/tagbar.git
 git clone https://github.com/scrooloose/nerdtree.git
-ln -s vim .vim
+cd ~; ln -s vim .vim
 ```
