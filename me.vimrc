@@ -32,6 +32,20 @@ syntax on
 set laststatus=2
 set statusline=%<%{'Ln:\ '}%l,%{'\ Col:\ '}%c%V\ \|\ %Y\ \|\ %{&fenc}(%{&enc}\)\ \|\ %{'Tab:\ '.&sw}\ \|\ %{&ff}%=%8P
 
+" 快捷键设置
+let mapleader='.'
+cmap He Hexplore
+cmap Ve Vexplore
+nmap <F5> :NERDTreeToggle<CR>
+nmap <F6> :TagbarToggle<CR>
+
+" YCM配置
+set completeopt=menu,menuone
+let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_show_diagnostics_ui = 0
+nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
 " vim-go定制
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
@@ -41,12 +55,6 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_fmt_command = "goimports"
 "let g:go_version_warning = 0
-
-" 按键映射
-cmap He Hexplore
-cmap Ve Vexplore
-nmap <F5> :NERDTreeToggle<CR>
-nmap <F6> :TagbarToggle<CR>
 
 "=================================================================================================
 
@@ -64,3 +72,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " 打开文件时定位到上次退出时所在行
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+
+" 插入模式下backspace可删除字符
+set backspace=indent,eol,start
