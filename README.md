@@ -4,11 +4,7 @@
 
 ```
 cd ~
-git clone https://github.com/ironzhang/vim.git
-mkdir -p vim/bundle; cd vim/bundle
-git clone https://github.com/fatih/vim-go.git
-git clone https://github.com/Shougo/neocomplete.vim.git
-git clone https://github.com/majutsushi/tagbar.git
-git clone https://github.com/scrooloose/nerdtree.git
-cd ~; ln -s vim .vim
+git clone --recursive https://github.com/ironzhang/vim.git
+cd ~/vim/bundle/YouCompleteMe; ./install.py --clang-completer --go-completer; cd ~
+ln -s vim .vim
 ```
