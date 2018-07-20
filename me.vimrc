@@ -15,6 +15,7 @@ set termencoding=utf-8
 set fileencodings=utf-8,gbk,ucs-bom,gb18030,gb2312,cp936
 
 " 缩进设置
+set autoindent
 set smartindent
 set tabstop=4
 set shiftwidth=4
@@ -30,14 +31,6 @@ syntax on
 " 状态栏设置
 set laststatus=2
 set statusline=%<%{'Ln:\ '}%l,%{'\ Col:\ '}%c%V\ \|\ %Y\ \|\ %{&fenc}(%{&enc}\)\ \|\ %{'Tab:\ '.&sw}\ \|\ %{&ff}%=%8P
-
-" 自动补全
-let g:acp_enableAtStartup = 0
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
-inoremap <expr><C-g> neocomplete#undo_completion()
-inoremap <expr><C-l> neocomplete#complete_common_string()
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " vim-go定制
 let g:go_highlight_functions = 1
