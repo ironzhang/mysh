@@ -27,6 +27,6 @@ cd ~; ln -s ~/mysh/tmux/tmux.conf .tmux.conf
 ## install zsh
 ```
 cd ~
-echo "source ~/mysh/zsh/zsh.sh" >>.zshrc
+echo "source ~/mysh/zsh/zsh.rc" >>.zshrc
 ```
 
