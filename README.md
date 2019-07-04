@@ -1,11 +1,11 @@
-# vim
+# mysh
 
-我的vim设置
+环境配置
 
 ## install
 ```
 cd ~
-git clone --recursive https://github.com/ironzhang/vim.git
+git clone --recursive https://github.com/ironzhang/mysh.git
 ```
 
 ## install vim
