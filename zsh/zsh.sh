@@ -1,0 +1,6 @@
+#!/bin/sh
+
+source ~/mysh/zsh/alias.sh
+source ~/mysh/zsh/http.sh
+source ~/mysh/zsh/path.sh
+
