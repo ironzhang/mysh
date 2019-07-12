@@ -13,3 +13,5 @@
 	default = simple
 [url "git@git.ablecloud.cn:ablecloud/ac-comm-lib.git"]
 	insteadOf = https://git.ablecloud.cn/ablecloud/ac-comm-lib.git
+[url "git@git.xiaojukeji.com:"]
+	insteadOf = https://git.xiaojukeji.com/
