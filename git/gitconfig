@@ -15,3 +15,7 @@
 	insteadOf = https://git.ablecloud.cn/ablecloud/ac-comm-lib.git
 [url "git@git.xiaojukeji.com:"]
 	insteadOf = https://git.xiaojukeji.com/
+#[http]
+#	proxy = http://127.0.0.1:8118
+#[https]
+#	proxy = http://127.0.0.1:8118
