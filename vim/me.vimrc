@@ -52,10 +52,14 @@ set backspace=indent,eol,start
 
 " 快捷键设置
 let mapleader='.'
-cmap He Hexplore
-cmap Ve Vexplore
+"cmap He Hexplore
+"cmap Ve Vexplore
 nmap <F5> :NERDTreeToggle<CR>
 nmap <F6> :TagbarToggle<CR>
+
+" 禁用错误铃声
+set noerrorbells
+set visualbell
 
 "=================================================================================================
 " 插件配置
