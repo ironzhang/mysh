@@ -11,7 +11,9 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [push]
 	default = simple
-[url "git@git.ablecloud.cn:ablecloud/ac-comm-lib.git"]
-	insteadOf = https://git.ablecloud.cn/ablecloud/ac-comm-lib.git
+[core]
+	quotepath = false
 [url "git@git.xiaojukeji.com:"]
 	insteadOf = https://git.xiaojukeji.com/
+[url "git@git.ablecloud.cn:ablecloud/ac-comm-lib.git"]
+	insteadOf = https://git.ablecloud.cn/ablecloud/ac-comm-lib.git
