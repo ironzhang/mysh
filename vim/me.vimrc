@@ -59,7 +59,7 @@ nmap <F6> :TagbarToggle<CR>
 
 " 禁用错误铃声
 set noerrorbells
-set visualbell
+"set visualbell
 
 "=================================================================================================
 " 插件配置
