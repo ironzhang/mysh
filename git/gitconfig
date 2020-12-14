@@ -15,3 +15,5 @@
 	quotepath = false
 [url "git@git.xiaojukeji.com:"]
 	insteadOf = https://git.xiaojukeji.com/
+[url "git@git.ablecloud.cn:"]
+	insteadOf = https://git.ablecloud.cn/
