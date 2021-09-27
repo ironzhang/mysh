@@ -3,12 +3,12 @@
 "
 
 " 插件配置
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 Plug 'fatih/vim-go'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdtree'
-Plug 'shougo/neocomplete.vim'
-Plug 'iamcco/markdown-preview.nvim'
+Plug 'shougo/deoplete.nvim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 call plug#end()
 
 " 非兼容模式
@@ -70,15 +70,10 @@ set noerrorbells
 " 插件配置
 "=================================================================================================
 
-" neocomplete配置
-let g:acp_enableAtStartup = 0
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
-inoremap <expr><C-g> neocomplete#undo_completion()
-inoremap <expr><C-l> neocomplete#complete_common_string()
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+" deoplete
+let g:deoplete#enable_at_startup = 1
 
-" vim-go定制
+" vim-go
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
@@ -86,10 +81,7 @@ let g:go_highlight_interfaces = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_fmt_command = "goimports"
-"let g:go_def_mode = 'godef'
-"let g:go_def_mode = 'guru'
 let g:go_def_mode = 'gopls'
-"let g:go_referrers_mode = 'godef'
 let g:go_referrers_mode = 'gopls'
 let g:go_version_warning = 0
 
