@@ -14,8 +14,8 @@ function setup_ohmyzsh() {
 
 function setup_neovim() {
 	mkdir -p ~/.config/nvim
-	ln -s ~/mysh/nvim/init.vim ~/config/nvim/init.vim
-	ln -s ~/mysh/nvim/autoload ~/config/nvim/autoload
+	ln -s ~/mysh/nvim/init.vim ~/.config/nvim/init.vim
+	ln -s ~/mysh/nvim/autoload ~/.config/nvim/autoload
 }
 
 function setup() {
