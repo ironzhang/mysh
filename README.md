@@ -6,7 +6,7 @@
 
 ```
 cd ~
-git clone https://github.com/ironzhang/mysh.git
+git clone --recursive https://github.com/ironzhang/mysh.git
 ```
 
 ## setup
