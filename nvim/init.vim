@@ -72,6 +72,9 @@ set noerrorbells
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
+inoremap <expr><C-g> deoplete#undo_completion()
+inoremap <expr><C-l> deoplete#complete_common_string()
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " vim-go
 let g:go_highlight_functions = 1
