@@ -88,3 +88,6 @@ let g:go_def_mode = 'gopls'
 let g:go_referrers_mode = 'gopls'
 let g:go_version_warning = 0
 
+" markdown-preview
+let g:mkdp_echo_preview_url = 1
+
