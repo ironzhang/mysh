@@ -12,6 +12,10 @@ function setup_ohmyzsh() {
 	echo "source ~/mysh/zsh/zsh.rc" >> .zshrc
 }
 
+function setup_vim() {
+	ln -s ~/mysh/vim .vim
+}
+
 function setup_neovim() {
 	mkdir -p ~/.config/nvim
 	ln -s ~/mysh/nvim/init.vim ~/.config/nvim/init.vim
