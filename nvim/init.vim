@@ -2,6 +2,9 @@
 " vimrc
 "
 
+" 设置 python 程序路径
+let g:python3_host_prog = '/usr/bin/python3'
+
 " 插件配置
 call plug#begin('~/.config/nvim/plugged')
 Plug 'fatih/vim-go'
@@ -26,6 +29,12 @@ set tabstop=4
 set shiftwidth=4
 set shiftround
 
+" 将 markdown 的缩进设置为 tab
+autocmd FileType markdown setlocal tabstop=4 shiftwidth=4 noexpandtab
+
+" 禁用自动注释
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 " 搜索高亮
 set hlsearch
 set incsearch
@@ -45,9 +54,6 @@ colorscheme default
 
 " 禁用匹配高亮
 let loaded_matchparen = 1
-
-" 禁用自动注释
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " 打开文件时定位到上次退出时所在行
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
