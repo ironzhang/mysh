@@ -15,3 +15,7 @@
 	quotepath = false
 [url "git@git.ablecloud.cn:"]
 	insteadOf = https://git.ablecloud.cn/
+[http]
+	proxy = socks5://127.0.0.1:1081
+[https]
+	proxy = socks5://127.0.0.1:1081

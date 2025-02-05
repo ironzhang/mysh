@@ -1,7 +1,7 @@
 #!/bin/sh
 
 set_proxy() {
-	proxy_server="sock5://127.0.0.1:1081"
+	proxy_server="http://127.0.0.1:1080"
 	export http_proxy=$proxy_server
 	export https_proxy=$proxy_server
 	export all_proxy=$proxy_server

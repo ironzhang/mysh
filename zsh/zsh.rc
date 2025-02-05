@@ -4,4 +4,5 @@ source ~/mysh/zsh/alias.sh
 source ~/mysh/zsh/funcs.sh
 source ~/mysh/zsh/tmux.sh
 source ~/mysh/zsh/export.sh
+source ~/mysh/zsh/python.sh
 
